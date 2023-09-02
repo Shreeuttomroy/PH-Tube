@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QNA Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        code{
+            background-color: rgba(0, 0, 0, 0.473);
+            color: white;
+        }
+        pre{
+            color: black;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black">
+    <header class="w-11/12 py-4 mx-auto">
+        <h1 class=" w-fit bg-orange-600 mx-auto font-bold text-3xl px-3 py-2 text-white rounded-md">Blog</h1>
+    </header>
+    <main class="w-11/12 my-4 mx-auto">
+        <!--  Discuss the scope of `<code>var</code>`, `<code>let</code>`, and `<code>const</code>` -->
+        <div class=" my-5">
+            <div class="">
+                <div class="text-xl mb-2 font-bold">
+                    <p>1. Discuss the scope of '<code>var</code>', '<code>let</code>', and '<code>const</code>'</p>
+                </div>
+                <div class=" ml-4">
+                    <p>The scope of a variable in JavaScript determines where the variable can be accessed. There are
+                        three different scopes in JavaScript:</p>
+                    <ul class="list-disc ml-4 my-2">
+                        <li><span class="font-medium">Global scope:</span> This is the outermost scope and is accessible
+                            from anywhere in the program. Variables declared outside of any function or block statement
+                            are in the global scope.</li>
+                        <li><span class="font-medium">Function scope:</span> This is the scope of a function and is only
+                            accessible within that function. Variables declared within a function are in the function
+                            scope.</li>
+                        <li><span class="font-medium">Block scope:</span> This is the scope of a block statement, such
+                            as an if statement or a for loop. Variables declared within a block statement are in the
+                            block scope.</li>
+                    </ul>
+                    <p>The keywords <code>var</code>, <code>let</code>, and <code>const</code> are used to declare variables in JavaScript. The scope of a
+                        variable declared with <code>var</code> is the function scope, unless it is declared outside of any function,
+                        in which case it has global scope. The scope of a variable declared with <code>let</code> is the block scope.
+                        The scope of a variable declared with <code>const</code> is also the block scope.</p>
+                    <p>Here are some of the key differences between <code>var</code>, <code>let</code>, and <code>const</code>:</p>
+                    <ul class="list-disc ml-4 my-2">
+                        <li><code>var</code> variables can be declared and initialized anywhere in the program, while <code>let</code> and <code>const</code>
+                            variables must be declared and initialized within a block statement.</li>
+                        <li><code>var</code> variables are hoisted to the top of their scope, while <code>let</code> and <code>const</code> variables are not
+                            hoisted.</li>
+                        <li><code>var</code> variables can be re-declared and updated, while ><code>let</code> variables can only be updated and
+                            <code>const</code> variables cannot be updated or re-declared.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Tell us the use cases of `null` and `undefined` -->
+        <div class="">
+            <div class="">
+                <div class="text-xl font-bold">
+                    <p>Tell us the use cases of <code>null</code> and <code>undefined</code></p>
+                </div>
+                <div class="">
+                    <p> The <code>null</code> and <code>undefined</code> values are two special values in JavaScript that represent the absence of
+                        a value.</p>
+                    <ul class="list-disc ml-4 my-2">
+                        <li><code>Null</code> is used to represent the intentional absence of a value. For example, you might use
+                            <code>null</code> to represent a missing person or a non-existent object.</li>
+                        <li><code>undefined</code> is used to represent the unintentional absence of a value. For example, a variable
+                            that has not been assigned a value is <code>undefined</code>.</li>
+                    </ul>
+                    <div class="">
+                        <p>Here are the use cases of <code>null</code> and <code>undefined</code>:</p>
+                        <code>
+                            <pre>
+var name;
+if (prompt("What is your name?")) {
+    name = prompt("What is your name?");
+} else {
+    name = null;
+ }
+                        </pre>
+                        </code>
+                        <p>It is important to use <code>null</code> and <code>undefined</code> correctly in your JavaScript code. Using them incorrectly can lead to errors and unexpected behavior.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- What do you mean by REST API -->
+        <div class="">
+            <div class="">
+                <div class="text-xl my-2 font-bold">
+                    <p>3. What do you mean by REST API?</p>
+                </div>
+                <div class="ml-3">
+                    <p>REST API stands for Representational State Transfer Application Programming Interface. It is an architectural style for designing APIs that are based on the principles of HTTP. REST APIs are used to interact with web services and allow clients to access and manipulate resources.</p>
+                    <p>The main principles of REST are:</p>
+                    <ul class="ml-4 list-disc">
+                        <li><span class="font-medium">Resource identification:</span> Each resource in a REST API is identified by a unique URI.</li>
+                        <li><span class="font-medium">Resource manipulation:</span> Resources can be manipulated using HTTP methods such as GET, POST, PUT, and DELETE.</li>
+                        <li><span class="font-medium">Self-descriptive messages:</span> REST APIs use self-descriptive messages to communicate between clients and servers. This means that the messages do not need to be interpreted by the client or server, as the meaning of the message is encoded in the message itself.</li>
+                        <li><span class="font-medium">Uniform interface:</span> REST APIs use a uniform interface to interact with resources. This means that all resources are accessed using the same methods and follow the same conventions.</li>
+                    </ul>
+                    <p>REST APIs are a popular choice for designing APIs because they are easy to understand and implement. They are also scalable and can be used to build large and complex systems.</p>
+                    <p>Here are some examples of REST APIs:</p>
+                    <ul class="ml-4 list-disc">
+                        <li>The GitHub API allows you to interact with GitHub repositories and projects.</li>
+                        <li>The Google Maps API allows you to get geolocation data and display maps.
+                        </li>
+                        <li>The Twitter API allows you to get tweets and user information.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="w-11/12 mx-auto py-5">
+        <div class="w-full">
+            <h1 class="w-fit bg-orange-600 mx-auto font-bold text-3xl px-3 py-2 text-white rounded-md">Blog</h1>
+        </div>
+        <div class="w-full">
+            <p class="text-black w-fit mx-auto font-medium text-xl">&copy;All Right Reserved By- <sub class="text-orange-600">Blog</sub></p>
+        </div>
+    </footer>
+</body>
+
+</html>
